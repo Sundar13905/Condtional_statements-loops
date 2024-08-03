@@ -67,5 +67,26 @@ int main() {
         cout<<endl;
     }
 
+    int q = 0;
+
+    while(q<5)
+        {
+            for(int i = 0;i<5;i++)
+                {
+                    cout<<"Hello World"<<endl; 
+                }
+                q++;
+        }
+        // this will produce 25 hello world commands 5*5
+
+    for(int i =0;i<10;i++)
+    {
+        while(i<5)
+        {
+            cout<<"World hello"<<endl;
+            i++; //prints world hello 5 times 
+        }
+    }   
+
     return 0;
 }
