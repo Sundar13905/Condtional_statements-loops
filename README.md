@@ -193,6 +193,38 @@ int main() {
 We learnt how to implement decision making statements like if, else if, switch in C++ programming language 
 
 ========================================================================================================================================================================
+syms a t x
+A = diff(t*cos(a*t))
+B = diff((t^3)+(cosh(a*t)))
+C = diff((7*(t^4))+(2*exp(-t))+(3*exp(-2*t)))
+
+% Q.2
+fun = exp(2*t)
+i = int((fun),-inf,0)
+fun1 = sin(2*t)
+ii = int(fun1,0,2*pi)
+assume(a>0)
+fun2 = 1/(a^2+x^2)
+F = int((fun2),-inf,inf)
+fun3 = (exp(-x^2))
+G = int(fun3,0,inf)
+fun4 = exp(-a*(x^2))
+H = int(fun4,-inf,inf)
+
+
+%Q.3
+
+l = laplace(3*heaviside(t-2))
+m = laplace(sin(2*t)*[heaviside(t-2*pi)-heaviside(t - 4*pi)])
+
+
+% Q.4
+f1 = exp(-5*t)*dirac(t-2)
+n1 = int(f1,0,inf)
+
+f2 = cos(2*t)*dirac(t -(pi/4))
+n2 = int(f2,0,inf) 
+
 # Experiment 6: - To study and implement C++ decision making statements Loops
 
 ## Aim
